@@ -3,12 +3,16 @@ import React, { useState } from "react";
 
 import Logo from "../../assets/Logo.svg";
 import FB from "../../assets/Fb.svg";
+import { useNavigation } from "@react-navigation/native";
 
 export default function LoginForm() {
 	const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");
 
-	const handleLogin = () => {};
+	const navigation = useNavigation();
+	const handleLogin = () => {
+		navigation.navigate("Home");
+	};
 
 	const isButtonDisabled = username === "" || password === "";
 	return (

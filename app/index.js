@@ -1,9 +1,8 @@
 import React from "react";
-import LoginForm from "./components/auth/Login";
-import Home from "./screens/HomeScreen";
+import MyStack from "./navigation/StackNavigator";
 
 function App() {
-	return <Home />;
+	return <MyStack />;
 }
 
 export default App;

@@ -3,8 +3,15 @@ import React from "react";
 
 import Logo from "../assets/Logo.svg";
 import DP from "../assets/Accounts/Dp.svg";
+import { useNavigation } from "@react-navigation/native";
 
 export default function LoginScreen() {
+	const navigation = useNavigation();
+
+	const handlePress = () => {
+		navigation.navigate("Login");
+	};
+
 	return (
 		<View className="flex-1 bg-slate-50">
 			<SafeAreaView className="flex-1">
@@ -15,7 +22,7 @@ export default function LoginScreen() {
 						<View className="items-center justify-center space-y-3">
 							<DP />
 							<Text className="text-xl font-bold text-gray-700">jacob_w</Text>
-							<TouchableOpacity className="items-center justify-center px-36 py-2.5 bg-sky-500 rounded-md">
+							<TouchableOpacity className="items-center justify-center px-36 py-2.5 bg-sky-500 rounded-md" onPress={handlePress}>
 								<Text className="text-lg font-bold text-slate-50">Log In</Text>
 							</TouchableOpacity>
 							<TouchableOpacity className="items-center justify-center pt-4">

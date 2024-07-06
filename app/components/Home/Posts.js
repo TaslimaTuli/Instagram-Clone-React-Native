@@ -5,6 +5,7 @@ import User from "../../assets/Accounts/DpSm.svg";
 import BlueTick from "../../assets/Posts/BlueTick.svg";
 import More from "../../assets/Posts/More.svg";
 import Post from "../../assets/Posts/UserPost.svg";
+import PicNumber from "../../assets/Posts/PicNumber.svg";
 import Love from "../../assets/Posts/Love.svg";
 import Comments from "../../assets/Posts/Comments.svg";
 import Share from "../../assets/Posts/Share.svg";
@@ -13,8 +14,8 @@ import UserSmall from "../../assets/Accounts/DpXs.svg";
 
 export default function Posts() {
 	return (
-		<View className="flex-1 mb-2">
-			<View className="flex-row items-center justify-between px-4 py-3 bg-slate-50 ">
+		<View className="flex-1 mb-4">
+			<View className="flex-row items-center justify-between px-4 py-3  ">
 				<User />
 				<View className="pr-60 flex-col">
 					<Text className="text-base font-extrabold text-gray-700">
@@ -26,6 +27,9 @@ export default function Posts() {
 			</View>
 			<View className="items-center justify-center w-screen">
 				<Post />
+				<View className="absolute top-3 right-4">
+					<PicNumber />
+				</View>
 			</View>
 			<View className="flex-row items-center justify-start px-4 py-1 space-x-5">
 				<TouchableOpacity>
