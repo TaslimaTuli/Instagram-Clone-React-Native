@@ -11,8 +11,8 @@ import PicSmall2 from "../../assets/Search/PicSmall2.svg";
 
 export default function Search() {
 	return (
-		<SafeAreaView className="flex-1  bg-slate-50">
-			<StatusBar backgroundColor="rgb(248 250 252)" barStyle={"dark-content"} />
+		<SafeAreaView className="flex-1 bg-gray-50">
+			<StatusBar backgroundColor="rgb(249 250 251)" barStyle={"dark-content"} />
 
 			<ScrollView showsVerticalScrollIndicator={false}>
 				{/* Search bar */}

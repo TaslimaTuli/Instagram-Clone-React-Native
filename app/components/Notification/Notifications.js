@@ -8,15 +8,15 @@ import Like from "../../assets/Notification/Like.svg";
 
 export default function Notifications() {
 	return (
-		<View>
-			<SafeAreaView className="bg-slate-50 mb-4">
-				<StatusBar backgroundColor="rgb(248 250 252)" barStyle={"dark-content"} />
+		<View className="">
+			<SafeAreaView className="bg-white pb-2">
+				<StatusBar backgroundColor="rgb(249 250 251)" barStyle={"dark-content"} />
 				<ScrollView showsVerticalScrollIndicator={false}>
-					<View className="py-3">
+					<View className="bg-gray-50 pt-3">
 						<Text className="p-3 text-base text-gray-800">Follow Requests</Text>
 						<View className="w-full h-px bg-zinc-200" />
 					</View>
-					<View className="px-3">
+					<View className="px-3 pt-3">
 						<Text className="text-lg font-bold text-gray-800 pb-3">New</Text>
 						<View className="flex-row items-center py-2">
 							<DpSm width={40} height={40} />

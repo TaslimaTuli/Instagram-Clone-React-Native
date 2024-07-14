@@ -13,7 +13,7 @@ export default function Stories() {
 	];
 	return (
 		<View>
-			<ScrollView horizontal showsHorizontalScrollIndicator={false}>
+			<ScrollView className="bg-white" horizontal showsHorizontalScrollIndicator={false}>
 				<View className="flex-row items-center justify-center py-2">
 					<TouchableOpacity className="space-y-1 px-2">
 						<MyStory />

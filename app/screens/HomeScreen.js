@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<View className="">
 			<SafeAreaView>
-				<ScrollView showsHorizontalScrollIndicator={false}>
+				<ScrollView showsVerticalScrollIndicator={false}>
 					<Header />
 					<Stories />
 					<Posts />

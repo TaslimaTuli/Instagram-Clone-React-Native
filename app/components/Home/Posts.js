@@ -14,7 +14,7 @@ import UserSmall from "../../assets/Accounts/DpXs.svg";
 
 export default function Posts() {
 	return (
-		<View className="flex-1 mb-4">
+		<View className="flex-1 pb-4 bg-white">
 			<View className="flex-row items-center justify-between px-4 py-3  ">
 				<User />
 				<View className="pr-60 flex-col">

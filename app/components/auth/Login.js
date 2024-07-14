@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, StatusBar, TouchableOpacity, TextInput, KeyboardAvoidingView } from "react-native";
+import { View, Text, SafeAreaView, StatusBar, TouchableOpacity, TextInput, KeyboardAvoidingView, ActivityIndicator } from "react-native";
 import React, { useState } from "react";
 
 import Logo from "../../assets/Logo.svg";
@@ -8,17 +8,27 @@ import { useNavigation } from "@react-navigation/native";
 export default function LoginForm() {
 	const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");
+	// const [loading, setLoading] = useState(true);
 
 	const navigation = useNavigation();
+
 	const handleLogin = () => {
 		navigation.navigate("Home");
 	};
 
+	// if (loading) {
+	// 	return (
+	// 		<View className="flex-1 items-center justify-center">
+	// 			<ActivityIndicator size="large" color="#0000ff" />
+	// 		</View>
+	// 	);
+	// }
+
 	const isButtonDisabled = username === "" || password === "";
 	return (
-		<View className="flex-1 bg-slate-50  mx-3">
-			<StatusBar backgroundColor="rgb(248 250 252)" barStyle={"dark-content"} />
-			<KeyboardAvoidingView behavior="padding" className="flex-1 justify-end items-center">
+		<View className="flex-1 bg-gray-50">
+			<StatusBar backgroundColor="rgb(249 250 251)" barStyle={"dark-content"} />
+			<KeyboardAvoidingView behavior="padding" className="flex-1 justify-end items-center bg-gray-50">
 				<SafeAreaView className="flex-1">
 					<View className="flex-1 items-center justify-between">
 						<View className="flex-1 items-center justify-center space-y-16">

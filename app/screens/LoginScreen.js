@@ -13,10 +13,10 @@ export default function LoginScreen() {
 	};
 
 	return (
-		<View className="flex-1 bg-slate-50">
+		<View className="flex-1 ">
 			<SafeAreaView className="flex-1">
-				<StatusBar backgroundColor="rgb(248 250 252)" barStyle={"dark-content"} />
-				<View className="flex-1 items-center justify-between mx-3">
+				<StatusBar backgroundColor="rgb(249 250 251)" barStyle={"dark-content"} />
+				<View className="flex-1 items-center justify-between px-3 bg-slate-50">
 					<View className="flex-1 items-center justify-center space-y-16">
 						<Logo />
 						<View className="items-center justify-center space-y-3">
